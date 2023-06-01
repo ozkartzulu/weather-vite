@@ -1,0 +1,133 @@
+body {
+  font-family: 'Hubballi', cursive;
+  background-color: #f4f4f5;
+  font-size: 1.6rem;
+}
+
+header {
+  background-color: #0ea5e9;
+  padding: 1.5rem;
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 50px;
+  margin: 0;
+}
+
+.two-columns {
+  display: grid;
+  gap: 20px;
+}
+
+.main-content {
+  padding: 50px 0;
+}
+
+@media (min-width: 768px) {
+  .two-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 15px;
+}
+
+.box {
+  background-color: #fff;
+  padding: 25px 25px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.view h3 {
+  text-align: center;
+}
+
+.view>p {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+}
+
+.view>p span {
+  font-size: 50px;
+}
+
+.view>div {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 1rem auto;
+  gap: 8px;
+}
+
+.field label {
+  display: block;
+
+}
+
+.field input,
+.field select {
+  all: unset;
+  border: 1px solid #cbd5e1;
+  border-radius: 15px;
+  padding: .5rem;
+}
+
+input[type="submit"] {
+  background-color: #0ea5e9;
+  margin: 2rem auto 0 auto;
+  display: block;
+  padding: 1rem 3rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  border: none;
+  width: 100%;
+  transition: background-color .3s ease;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  input[type="submit"] {
+    max-width: 400px;
+  }
+}
+
+input[type="submit"]:hover {
+  background-color: #0369a1;
+}
+
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.error {
+  background-color: #fca5a5;
+  padding: 8px 10px;
+  border-radius: 15px;
+  border: 1px solid #dc2626;
+}
+
+@media(max-width: 600px) {
+  header h1 {
+    font-size: 30px;
+  }
+}
